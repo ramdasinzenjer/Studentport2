@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/bg2" >
+      
+    <ScrollView 
+        android:id="@+id/Scrollone1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"          
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="508dp" >
+                
+    <EditText
+        android:id="@+id/editText_fname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewhead1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="First name"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_rgno1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:textColor="#ffffff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText_password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_username1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:id="@+id/spinner_dpmnt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_password1"
+        android:layout_alignRight="@+id/editText_password1"
+        android:layout_below="@+id/editText_password1"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editText_dob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_username1"
+        android:layout_below="@+id/spinner_dpmnt1"
+        android:ems="10"
+        android:hint="DOB in yyyy-mm-dd"
+        android:textColor="#ffffff"
+        android:inputType="date" />
+
+
+    <EditText
+        android:id="@+id/editText_lname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_fname1"
+        android:layout_below="@+id/editText_fname1"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Last name"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName" />
+    
+    <EditText
+        android:id="@+id/editText_rgno1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_lname1"
+        android:layout_below="@+id/editText_lname1"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Register no."
+        android:textColor="#ffffff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_dob1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewhead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="Staff Sign up Form "
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button_cancel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_email1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText_email1"
+        android:text="Cancel"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_create1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spinner_dpmnt1"
+        android:layout_below="@+id/editText_email1"
+        android:text="Create "
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+			</RelativeLayout>   
+        </LinearLayout>
+    </ScrollView>    
+
+</RelativeLayout>

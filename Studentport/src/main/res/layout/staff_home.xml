@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+    
+     <ImageView
+        android:id="@+id/imageView1a"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:src="@drawable/image_center" />
+
+    <ImageView
+        android:id="@+id/bhome1"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/curve_home" />
+
+    <ImageView
+        android:id="@+id/bprofile1"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/bhome1"
+        android:layout_below="@+id/bhome1"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/curve_profile" />
+
+    <ImageView
+        android:id="@+id/bevents1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/bhome1"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/imageView1a"
+        android:src="@drawable/stevents" />
+
+    <ImageView
+        android:id="@+id/bcourse1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/bevents1"
+        android:layout_toRightOf="@+id/imageView1a"
+        android:src="@drawable/stcourses" />
+
+    <ImageView
+        android:id="@+id/imgDown1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/bcourse1"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/down" />
+
+    <TextView
+        android:id="@+id/textvsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgDown1"
+        android:layout_alignRight="@+id/imageView1a"
+        android:layout_marginBottom="19dp"
+        android:text="Downloads"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgUp1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/upload_icon" />
+
+    <TextView
+        android:id="@+id/textvsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textvsg1"
+        android:layout_alignBottom="@+id/textvsg1"
+        android:layout_toRightOf="@+id/imgUp1"
+        android:text="Upload"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

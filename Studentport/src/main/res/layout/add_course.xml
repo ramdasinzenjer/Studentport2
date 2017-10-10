@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <Spinner
+        android:id="@+id/sp_depart"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/bc_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edit_cfee"
+        android:layout_below="@+id/edit_cfee"
+        android:layout_marginTop="20dp"
+        android:text="Add Course"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#0D91DD"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edit_cnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_depart"
+        android:layout_below="@+id/sp_depart"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Course Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_cdescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_cnam"
+        android:layout_below="@+id/edit_cnam"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Course description"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_cdur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_cdescr"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Duration"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_cfee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_cdur"
+        android:layout_below="@+id/edit_cdur"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Fee Structure"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:src="@drawable/image_center" />
+
+    <ImageView
+        android:id="@+id/bhome"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/curve_home" />
+
+    <ImageView
+        android:id="@+id/bprofile"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/bhome"
+        android:layout_below="@+id/bhome"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/curve_profile" />
+
+    <ImageView
+        android:id="@+id/bevents"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/bhome"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:src="@drawable/stevents" />
+
+    <ImageView
+        android:id="@+id/bcourse"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/bevents"
+        android:layout_toRightOf="@+id/imageView1"
+        android:src="@drawable/stcourses" />
+
+</RelativeLayout>

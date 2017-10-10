@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+      android:background="@drawable/bg2" >
+
+    <TextView
+        android:id="@+id/textViewwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Welcome "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_mreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_lgusr"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText_lgpwd"
+        android:layout_marginBottom="28dp"
+        android:text="Create New Account"
+        
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_nwusr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_mreg"
+        android:layout_alignLeft="@+id/button_mreg"
+        android:text="New User ?.."
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_mlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_nwusr"
+        android:layout_alignRight="@+id/editText_lgusr"
+        android:layout_marginBottom="71dp"
+        
+        android:text="Log in"
+
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_lgpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_mlog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_lgusr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_lgpwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner_typ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_lgusr"
+        android:layout_alignRight="@+id/editText_lgpwd"
+        android:layout_below="@+id/textViewwelcome"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>

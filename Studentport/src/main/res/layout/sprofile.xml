@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/bg2" >
+
+    <EditText
+        android:id="@+id/editText_fname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewhead1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="First name"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_lname1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editText_password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_username1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_lname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_fname1"
+        android:layout_below="@+id/editText_fname1"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Last name"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_password1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColor="#ffffff"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewhead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="Click here to edit profile "
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button_create1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText_password1"
+        android:layout_below="@+id/editText_email1"
+        android:layout_marginTop="28dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="Update Profile" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StudentPortal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="server_add">https://mytripuser.000webhostapp.com/studentsport/</string>
+    <string-array name="usertype">
+	<item>Admin</item>
+	<item>Student</item>
+	<item>Faculty</item>
+	</string-array>
+	<string-array name="department">
+	<item>Bsc</item>
+	<item>Bcom</item>
+	<item>BBA</item>
+	</string-array>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <ImageView
+        android:id="@+id/button_vuevents"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/button_vauser"
+        android:layout_centerVertical="true"
+        android:src="@drawable/update_event" />
+
+    <ImageView
+        android:id="@+id/button_vucourses"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/button_vuevents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/course_details" />
+
+    <ImageView
+        android:id="@+id/button_vauser"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/button_vuevents"
+        android:layout_alignLeft="@+id/button_vucourses"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/approve_user" />
+
+    <ImageView
+        android:id="@+id/imageView_Upfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_vauser"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/upload_icon" />
+
+    <TextView
+        android:id="@+id/text1234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_Upfile"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@+id/imageView_Upfile"
+        android:text="Upload Files"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <TextView
+        android:id="@+id/textView_cdescr"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_ctitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Description"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_cduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_cdescr"
+        android:layout_below="@+id/textView_cdescr"
+        android:layout_marginTop="36dp"
+        android:text="Duration"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_cfee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_cduration"
+        android:layout_below="@+id/textView_cduration"
+        android:layout_marginTop="36dp"
+        android:text="Fee details " 
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_head3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="21dp"
+        android:text="Select Department : "
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_head3"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/textView_head3" />
+
+    <Spinner
+        android:id="@+id/spinner_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_dep"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/spinner_dep"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/textView_head4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_dep"
+        android:layout_below="@+id/spinner_dep"
+        android:text="Select Course : "
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_ctitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_course"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Course Title"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <TextView
+        android:id="@+id/textView_ev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Events : "
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:id="@+id/listVieweve"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/textView_ev"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_ev" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/listVieweve"
+        android:layout_below="@+id/listVieweve"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Event Title " >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_decrip"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText_title"
+        android:layout_below="@+id/editText_title"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Event Description " />
+
+    <EditText
+        android:id="@+id/editText_place"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText_decrip"
+        android:layout_below="@+id/editText_decrip"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Event Place" />
+
+    <EditText
+        android:id="@+id/editText_edat"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText_place"
+        android:layout_below="@+id/editText_place"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Event Date " />
+
+    <EditText
+        android:id="@+id/editText_etim"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/editText_edat"
+        android:layout_alignBottom="@+id/editText_edat"
+        android:layout_toRightOf="@+id/editText_edat"
+        android:ems="10"
+        android:hint="Event Time " />
+
+    <Button
+        android:id="@+id/button_upeve"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_etim"
+        android:layout_alignRight="@+id/editText_etim"
+        android:layout_below="@+id/editText_etim"
+        android:text="Update Event"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#0D91DD"
+        android:padding="10dp" />
+
+</RelativeLayout>
